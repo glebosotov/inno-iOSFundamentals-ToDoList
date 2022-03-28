@@ -13,6 +13,12 @@
 		842D54FB27F0EEA400A516BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842D54F927F0EEA400A516BB /* Main.storyboard */; };
 		842D54FD27F0EEA700A516BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842D54FC27F0EEA700A516BB /* Assets.xcassets */; };
 		842D550027F0EEA700A516BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842D54FE27F0EEA700A516BB /* LaunchScreen.storyboard */; };
+		842D550827F0F08300A516BB /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D550727F0F08300A516BB /* ToDoModel.swift */; };
+		842D550A27F0F10100A516BB /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D550927F0F10100A516BB /* ToDoTableViewController.swift */; };
+		842D550C27F0FB0A00A516BB /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D550B27F0FB0A00A516BB /* ToDoDetailViewController.swift */; };
+		8488DDAE27F10160005E0DDA /* JustPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8488DDAD27F10160005E0DDA /* JustPhotoPicker */; };
+		8488DDB027F189C1005E0DDA /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488DDAF27F189C1005E0DDA /* ToDoCell.swift */; };
+		8488DDB227F1916B005E0DDA /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488DDB127F1916B005E0DDA /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		842D54FC27F0EEA700A516BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842D54FF27F0EEA700A516BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842D550127F0EEA700A516BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842D550727F0F08300A516BB /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		842D550927F0F10100A516BB /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		842D550B27F0FB0A00A516BB /* ToDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailViewController.swift; sourceTree = "<group>"; };
+		8488DDAF27F189C1005E0DDA /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		8488DDB127F1916B005E0DDA /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8488DDAE27F10160005E0DDA /* JustPhotoPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				842D54F327F0EEA400A516BB /* AppDelegate.swift */,
+				8488DDAF27F189C1005E0DDA /* ToDoCell.swift */,
+				8488DDB127F1916B005E0DDA /* ImageView.swift */,
+				842D550B27F0FB0A00A516BB /* ToDoDetailViewController.swift */,
 				842D54F527F0EEA400A516BB /* SceneDelegate.swift */,
 				842D54F727F0EEA400A516BB /* ViewController.swift */,
 				842D54F927F0EEA400A516BB /* Main.storyboard */,
+				842D550727F0F08300A516BB /* ToDoModel.swift */,
+				842D550927F0F10100A516BB /* ToDoTableViewController.swift */,
 				842D54FC27F0EEA700A516BB /* Assets.xcassets */,
 				842D54FE27F0EEA700A516BB /* LaunchScreen.storyboard */,
 				842D550127F0EEA700A516BB /* Info.plist */,
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = ToDoList;
+			packageProductDependencies = (
+				8488DDAD27F10160005E0DDA /* JustPhotoPicker */,
+			);
 			productName = ToDoList;
 			productReference = 842D54F027F0EEA400A516BB /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 842D54E727F0EEA400A516BB;
+			packageReferences = (
+				8488DDAC27F10160005E0DDA /* XCRemoteSwiftPackageReference "JustPhotoPicker" */,
+			);
 			productRefGroup = 842D54F127F0EEA400A516BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8488DDB227F1916B005E0DDA /* ImageView.swift in Sources */,
 				842D54F827F0EEA400A516BB /* ViewController.swift in Sources */,
+				842D550C27F0FB0A00A516BB /* ToDoDetailViewController.swift in Sources */,
+				8488DDB027F189C1005E0DDA /* ToDoCell.swift in Sources */,
+				842D550827F0F08300A516BB /* ToDoModel.swift in Sources */,
 				842D54F427F0EEA400A516BB /* AppDelegate.swift in Sources */,
 				842D54F627F0EEA400A516BB /* SceneDelegate.swift in Sources */,
+				842D550A27F0F10100A516BB /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8488DDAC27F10160005E0DDA /* XCRemoteSwiftPackageReference "JustPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/igooor-bb/JustPhotoPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8488DDAD27F10160005E0DDA /* JustPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8488DDAC27F10160005E0DDA /* XCRemoteSwiftPackageReference "JustPhotoPicker" */;
+			productName = JustPhotoPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 842D54E827F0EEA400A516BB /* Project object */;
 }

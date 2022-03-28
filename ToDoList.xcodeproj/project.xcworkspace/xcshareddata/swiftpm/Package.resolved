@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "justphotopicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/igooor-bb/JustPhotoPicker",
+      "state" : {
+        "revision" : "275fd5870f204c07ce9f7ca29b32da3108d348ce",
+        "version" : "1.2.1"
+      }
+    }
+  ],
+  "version" : 2
+}
